@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:rim="http://www.blackberry.com/ns/widgets" version="1.0">
+  <name>myPeer</name>
+  <author rim:copyright="myPeer by Felix Lorsignol is licensed under a Creative Commons Attribution 2.5 Canada License." email="florsignol@netscape.net" href="http://ro.boti.ca">Felix Lorsignol</author>
+  <license href="http://creativecommons.org/licenses/by/2.5/ca/">This work is licensed under the Creative Commons Attribution 2.5 Canada License. To view a copy of this license, visit http://creativecommons.org/licenses/by/2.5/ca/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.&#xD;
+</license>
+  <content src="index.html">
+    <rim:background src="listener.html"/>
+  </content>
+  <rim:loadingScreen backgroundColor="#141414"/>
+  <rim:navigation mode="focus"/>
+</widget>

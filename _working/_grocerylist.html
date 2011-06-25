@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html>
+<head>
+	<title>Grocery List</title>
+	<meta name="viewport" id="viewport" content="initial-scale=1.0,user-scalable=no" />
+	<meta name="x-blackberry-defaultHoverEffect" content="false" />
+
+	<style type="text/css">
+		body { padding: 0px; margin: 0px; background-color: #EEEEEE;}
+		#container { width: 435px; margin: 0px auto; }
+		.group { list-style: none; margin: 0px; padding: 0px; float: left; }
+		.heading { width: 125px; padding: 10px; background-color: #CCCCCC; font-weight: bold; color: black; text-align: center; }
+		.food    { width: 125px; padding: 10px; background-color: #BEEEEF; font-weight: bold; }
+		.food:hover { background-color: red; color: white; }
+	</style>
+
+	<script type="text/JavaSCript">
+		function moveTo(id) {
+			blackberry.focus.setFocus(id);
+		}
+	</script>
+	
+</head>
+<body>
+
+<div id="container">
+
+	<ul class="group">
+		<li class="heading"> Fruit </li>
+		<!-- Use the "x-blackberry-onUp" attribute to invoke a JavaScript method that is called when upward navigation occurs from a given field. -->
+		<li class="food"> <input type="checkbox" id="cbApple"  value="1" x-blackberry-focusable="true" x-blackberry-onUp="moveTo('cbYogurt')" x-blackberry-initialFocus="true"/> Apples </li>
+		<li class="food"> <input type="checkbox" id="cbOrange" value="1" x-blackberry-focusable="true"/> Oranges </li>
+		<li class="food"> <input type="checkbox" id="cbGrape"  value="1" x-blackberry-focusable="true"/> Grapes </li>
+		<li class="food"> <input type="checkbox" id="cbBanana" value="1" x-blackberry-focusable="true"/> Bananas </li>
+	</ul>
+	<ul class="group">
+		<li class="heading"> Vegetables </li>
+		<li class="food"> <input type="checkbox" id="cbTomato" value="1" x-blackberry-focusable="true" x-blackberry-onUp="moveTo('cbFish')"/> Tomatoes </li>
+		<li class="food"> <input type="checkbox" id="cbPepper"  value="1" x-blackberry-focusable="true"/> Peppers </li>
+		<li class="food"> <input type="checkbox" id="cbPotato" value="1" x-blackberry-focusable="true"/> Potatos </li>
+		<li class="food"> <input type="checkbox" id="cbAsparagus"  value="1" x-blackberry-focusable="true"/> Asparagus </li>
+	</ul>
+	<ul class="group">
+		<li class="heading"> Grains </li>
+		<li class="food"> <input type="checkbox" id="cbBread" value="1" x-blackberry-focusable="true" x-blackberry-onUp="moveTo('cbSnacks')"/> Bread </li>
+		<li class="food"> <input type="checkbox" id="cbBagel" value="1" x-blackberry-focusable="true"/> Bagels </li>
+		<li class="food"> <input type="checkbox" id="cbPasta" value="1" x-blackberry-focusable="true"/> Pasta </li>
+		<li class="food"> <input type="checkbox" id="cbRice"  value="1" x-blackberry-focusable="true"/> Rice  </li>
+	</ul>
+	<ul class="group" style="clear: both;">
+		<li class="heading"> Dairy </li>
+		<li class="food"> <input type="checkbox" id="cbMilk"   value="1" x-blackberry-focusable="true"/> Milk </li>
+		<li class="food"> <input type="checkbox" id="cbCream"  value="1" x-blackberry-focusable="true"/> Cream </li>
+		<li class="food"> <input type="checkbox" id="cbCheese" value="1" x-blackberry-focusable="true"/> Cheese </li>
+		<!-- Use the "x-blackberry-onDown" attribute to invoke a JavaScript method that is called when downward navigation occurs from a given field. -->
+		<li class="food"> <input type="checkbox" id="cbYogurt" value="1" x-blackberry-focusable="true" x-blackberry-onDown="moveTo('cbApple')"/> Yogurt </li>
+	</ul>
+	<ul class="group">
+		<li class="heading"> Meat </li>
+		<li class="food"> <input type="checkbox" id="cbBeef"    value="1" x-blackberry-focusable="true"/> Beef </li>
+		<li class="food"> <input type="checkbox" id="cbPork"    value="1" x-blackberry-focusable="true"/> Pork </li>
+		<li class="food"> <input type="checkbox" id="cbChicken" value="1" x-blackberry-focusable="true"/> Chicken </li>
+		<li class="food"> <input type="checkbox" id="cbFish"    value="1" x-blackberry-focusable="true" x-blackberry-onDown="moveTo('cbTomato')"/> Fish </li>
+	</ul>
+	<ul class="group">
+		<li class="heading"> Other  </li>
+		<li class="food"> <input type="checkbox" id="cbBeef"   value="1" x-blackberry-focusable="true" /> Napkins </li>
+		<li class="food"> <input type="checkbox" id="cbSugar"  value="1" x-blackberry-focusable="true"/> Sugar </li>
+		<li class="food"> <input type="checkbox" id="cbJuice"  value="1" x-blackberry-focusable="true"/> Juice </li>
+		<li class="food"> <input type="checkbox" id="cbSnacks" value="1" x-blackberry-focusable="true" x-blackberry-onDown="moveTo('cbBread')"/> Snacks </li>
+	</ul>
+	
+</div>
+
+</body>
+</html>

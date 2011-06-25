@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+MIDlet-Version: 1.0
+MIDlet-Jar-Size: 173499
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Jar-URL: mypeer.jar
+RIM-COD-Module-Dependencies: net_rim_cldc,net_rim_bb_browser_field2_api,net_rim_bb_web_jse_api,net_rim_networkapi,net_rim_bb_browser_field_api,net_rim_os,net_rim_xml_org,net_rim_xml,net_rim_bbapi_browser
+RIM-MIDlet-Flags-2: 3
+RIM-MIDlet-Flags-1: 0
+RIM-COD-Module-Name: mypeer
+MIDlet-Name: myPeer
+RIM-COD-Size: 62064
+RIM-COD-Creation-Time: 1297233613
+MIDlet-2: ,,rim:runOnStartup
+MIDlet-1: myPeer,,rim:foreground;WIDGET;
+RIM-COD-URL: mypeer.cod
+RIM-COD-SHA1: ca ab 72 a7 2d 42 06 a4 4c 28 c8 f5 5f dd e4 1c c8 95 15 74
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Vendor: Felix Lorsignol

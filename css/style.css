@@ -1,0 +1,113 @@
+body {
+	margin: 0;
+	font-family: 'BBAlpha Sans', Verdana;
+	font-size: 22px;
+	background-color: #000000;
+	color: #fff;
+	height: 100%;
+}
+a {
+	text-decoration: none;
+	color: #ffffff;
+	display: block;
+}
+#top {
+	width: inherit;
+	position: absolute;
+}
+#demoBadge {
+	background-image: url(../images/demoBadge.gif);
+	width: 69px;
+	height: 60px;
+	position: absolute;
+	z-index: 10;
+	right: 0;
+}
+#title {
+	background: #000000;
+	color: #ffffff;
+	font-size: 17px;
+	height: 22px;
+	border-bottom: 1px solid #999999;
+}
+#peer-list {
+	height: 68px;
+	border-bottom: 1px solid #999999;
+	background-image: url(../images/backgroundPerf.gif);
+}
+#peer-list a {
+	float: left;
+	margin: 0px;
+	display: block;
+	height: 68px;
+	width: 80px;
+	background-color: transparent;	
+}
+#peer-list a:hover {
+	background-color: #44ACE1;
+/*	background-image: url(../images/peerHighlight.gif);*/
+}
+#peer-demo span {
+	display: block;
+	height: 68px;
+	width: 68px;
+	background-image: url(../images/demoPeer.png);
+}
+#peer-status {
+	font-size: 17px;
+	border-bottom: 1px solid #999999;
+	height: 22px;
+	background-image: url(../images/status.gif);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+#action-list {
+}
+#action-list a {
+	display: block;
+	height: 49px;
+	line-height: 48px;
+	background-color: transparent;
+}
+#action-list a:hover {
+	background-color: #44ACE1;
+/*	background-image: url(../images/listSelected.gif);*/
+}
+#action-list span {
+	display: block;
+	padding-left: 68px;
+}
+#action-sync span {
+	line-height: 48px;
+	background-image: url(../images/iconSync.png);
+	background-repeat: no-repeat;
+}
+#action-browse span {
+	background-image: url(../images/iconBrowse.png);
+	background-repeat: no-repeat;
+}
+#action-find span {
+	background-image: url(../images/iconFind.png);
+	background-repeat: no-repeat;
+}
+#action-call span {
+	background-image: url(../images/iconSOS.png);
+	background-repeat: no-repeat;
+}
+#action-options span {
+	background-image: url(../images/iconOptions.png);
+	background-repeat: no-repeat;
+}
+
+#image-list a {
+	display: block;
+	float: left;
+	padding: 4px;
+}
+#image-list a:hover {
+	background-color: #44ACE1;
+}
+#image-list img {
+	border: 1px solid black;
+}
+

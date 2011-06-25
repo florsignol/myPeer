@@ -1,0 +1,12 @@
+<loader version="1.0" >
+<application id="mypeer">
+<name>myPeer</name>
+<version>1.0</version>
+<vendor>Felix Lorsignol</vendor>
+<copyright>myPeer by Felix Lorsignol is licensed under a Creative Commons Attribution 2.5 Canada License.</copyright>
+<fileset Java="1.45">
+<directory></directory>
+<files>mypeer.cod</files>
+</fileset>
+</application>
+</loader>
